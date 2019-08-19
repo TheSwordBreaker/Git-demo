@@ -1,0 +1,53 @@
+
+//set the config
+
+git config --global user.email "kunalguptadev007@gmail.com"
+git config --global user.name "TheSwordBreaker"
+
+//view the config
+
+git cinfig --global user.gmail
+git config --global user.name
+
+
+//start the git repo in floder
+git init
+
+
+git status          // show current status
+git add "file name" //add new files in stageing area
+git commit
+git log              //add new files in git repo
+
+
+git log -p -N       // show latest n git log
+git status -s          // small output of status
+git add -A              // add all new files
+git commit -m "Message"         //commit changes in git repo with msg
+git commit -a -m "Message"  // add all new files and all commet with message
+
+
+git checkout filename      // the filename is replace with last commit
+git checkout -f             // all files are checked
+
+
+git rm  --cached waste.html     //remove file from git
+git rm waste.html               //delete the file from computer
+
+
+touch .gitignore                // this is speical file which ignore the changes of files mentain in .gitignore
+
+
+git branch                    // list number of branches in current repo
+git branch name                 // create a new branche with name
+git checkout name                  //shift to name branch
+git merge name                // merge the name branch with master branch  
+ 
+
+git checkout -b django          // this will create new breach and move to that branch
+
+
+git remote add origin https://github.com/TheSwordBreaker/Git-demo.git  // this will used to set the remote repo 
+git push origin master       // move master branch to remote site  // from  internet host like github and others
+git remote -v                   // show value of origin
+git push -u origin django       // dont know
